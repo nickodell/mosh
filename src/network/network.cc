@@ -132,7 +132,7 @@ void Connection::prune_sockets( void )
     if ( timestamp() - last_port_choice > MAX_OLD_SOCKET_AGE ) {
       int num_to_kill = socks.size() - 1;
       for ( int i = 0; i < num_to_kill; i++ ) {
-	socks.pop_front();
+        socks.pop_front();
       }
     }
   } else {
